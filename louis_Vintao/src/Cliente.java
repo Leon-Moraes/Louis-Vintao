@@ -1,8 +1,9 @@
-
+import java.time.LocalDate;
 
 public class Cliente 
 {
 	//ATRIBUTOS
+	private LocalDate data = LocalDate.now();
 	private String nome;
 	private String email;
 	private String cpf;
@@ -21,6 +22,13 @@ public class Cliente
 		this.cpf = cpf;
 	}
 	//GETTERS E SETTERS
+	public LocalDate getData() {
+		return data;
+	}
+
+	public void setData(LocalDate data) {
+		this.data = data;
+	}
 	public String getNome() 
 	{
 		return nome;
